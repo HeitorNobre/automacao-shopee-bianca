@@ -117,6 +117,95 @@ try:
     abrir_aba_produtos(page)
     input("Pressione Enter para fechar o browser...")
 
+    produto_desejado = "18497628810"
+    pesquisar_produto(page, produto_desejado)
+
+    print("Produto pesquisado e Enter pressionado.")
+
+    clicar_mais(page)
+
+    print("Produto selecionado o mais")
+
+    time.sleep(5)
+    clicar_impulsionar_agora(page)
+    time.sleep(5)
+
+    #-------------------------------------------------------------
+    #PRODUTO 2
+    #-------------------------------------------------------------
+
+    produto_desejado = "23597447451"
+    pesquisar_produto(page, produto_desejado)
+
+    print("Produto pesquisado e Enter pressionado.")
+
+    clicar_mais(page)
+
+    print("Produto selecionado o mais")
+
+    time.sleep(5)
+
+    clicar_impulsionar_agora(page)
+
+    time.sleep(5)
+
+    #---------------------------------------------------------------
+    #PRODUTO 3
+    #---------------------------------------------------------------
+
+    produto_desejado = "18897750589"
+    pesquisar_produto(page, produto_desejado)
+
+    print("Produto pesquisado e Enter pressionado.")
+
+    clicar_mais(page)
+
+    print("Produto selecionado o mais")
+
+    time.sleep(5)
+
+    clicar_impulsionar_agora(page)
+
+    time.sleep(5)
+    #---------------------------------------------------------------
+    #PRODUTO 4
+    #---------------------------------------------------------------
+
+    produto_desejado = "23597447525"
+    pesquisar_produto(page, produto_desejado)
+
+    print("Produto pesquisado e Enter pressionado.")
+
+    clicar_mais(page)
+
+    print("Produto selecionado o mais")
+
+    time.sleep(5)
+
+    clicar_impulsionar_agora(page)
+
+    time.sleep(5)
+    #---------------------------------------------------------------
+    #PRODUTO 5
+    #---------------------------------------------------------------
+
+    produto_desejado = "22493221678"
+    pesquisar_produto(page, produto_desejado)
+
+    print("Produto pesquisado e Enter pressionado.")
+
+    clicar_mais(page)
+
+    print("Produto selecionado o mais")
+
+    time.sleep(5)
+
+    clicar_impulsionar_agora(page)
+
+    time.sleep(5)
+
+    # salvar_sessao(context)
+
 
     produtos = ["18497628810","23597447451","18897750589","23597447525","22493221678"]
 
