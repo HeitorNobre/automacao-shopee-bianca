@@ -43,6 +43,21 @@ def human_click(page, element):
     page.mouse.up()
     human_delay(200, 600)
 
+def fechar_modal(page):
+    try:
+        # pega todos os elementos que correspondem ao seletor
+        elements = page.query_selector_all("i.eds-modal__close")
+        for el in elements:
+            if el.is_visible():
+                human_click(page, el)
+                print("Modal visível fechado com sucesso.")
+                return
+        print("Nenhum botão de fechar visível, seguindo o fluxo.")
+    except Exception as e:
+        print(f"Erro ao tentar fechar modal: {e}")
+
+
+
 def human_type(element, text):
     """Digita como humano, letra por letra, com variação de tempo."""
     for char in text:
@@ -181,10 +196,13 @@ try:
     page.goto("https://accounts.shopee.com.br/seller/login")
     human_delay(4000, 6000)
 
-    abrir_aba_produtos(page)
+    #fechar_modal(page)
     #input("Pressione Enter para começar a automação...")
 
-    produtos = ["18497628810", "23597447451", "18897750589", "23597447525", "22493221678"]
+    abrir_aba_produtos(page)
+
+    human_delay(4000, 6000)
+    produtos = ["18497628810", "23597447451", "18897750589", "22893207112", "22493221678"]
 
     for produto in produtos:
         pesquisar_produto(page, produto)
